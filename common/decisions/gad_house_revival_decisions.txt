@@ -1,0 +1,55 @@
+﻿greystark_revival_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_knight_kneeling.dds"
+
+	desc = greystark_revival_desc
+
+	major = yes
+
+	selection_tooltip = house_revival_tooltip
+
+	is_shown = {
+		character:Greystark_3.house = {
+			NOT = {
+				any_house_member = {
+					is_alive = yes
+				}
+			}
+		}
+		dynasty = dynasty:dynn_Stark
+	}
+
+	is_valid = {
+		has_title = title:c_white_harbor
+		has_title = title:d_white_harbor
+		is_house_head = yes
+		NOT = {
+			OR = {
+				house = character:Stark_1.house
+				house = character:Karstark_1.house
+				house = character:Cassel_1.house
+			}
+		}
+	}
+
+	effect = {
+		house = { save_scope_as = house }
+		hidden_effect = { set_house = character:Greystark_3.house }
+		scope:house = {
+			every_house_member = {
+				set_house = character:Greystark_3.house
+			}
+		}
+		every_held_title = {
+			set_coa = house:house_Greystark
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

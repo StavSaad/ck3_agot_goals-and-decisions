@@ -1,0 +1,3 @@
+gad_proclaim_narrow_sea_condition = {
+	first = I_PROCLAIM_NS
+}

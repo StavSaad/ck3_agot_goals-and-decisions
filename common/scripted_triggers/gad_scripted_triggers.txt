@@ -1,0 +1,7 @@
+﻿gad_has_petty_kingdoms_shatter_rule = {
+	OR = {
+		has_game_rule = agot_shatter_duchies
+		has_game_rule = agot_shatter_duchies_even
+		has_game_rule = agot_shatter_petty_kingdoms
+	}
+}

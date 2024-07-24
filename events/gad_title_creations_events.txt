@@ -1,0 +1,85 @@
+﻿namespace = gad_title_creation_decisions
+
+gad_title_creation_decisions.0001 = {
+	type = character_event
+	title = gad_title_creation_decisions.0001.t
+	desc = gad_title_creation_decisions.0001.desc
+	theme = crown
+	right_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	override_background = { reference = agot_pk_dorne }
+
+	immediate = {
+		gad_create_d_sea_of_dorne_scripted_effect = yes
+	}
+
+	#I'm the besterest!
+	option = {
+		name = gad_title_creation_decisions.0001.a
+
+		add_prestige_experience = 150
+
+		ai_chance = {
+			#Only option.
+			base = 100
+		}
+	}
+}
+
+gad_title_creation_decisions.0002 = {
+	type = character_event
+	title = gad_title_creation_decisions.0002.t
+	desc = gad_title_creation_decisions.0002.desc
+	theme = crown
+	right_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	override_background = { reference = agot_pk_stormlands }
+
+	immediate = {
+		gad_create_d_sea_of_dorne_scripted_effect = yes
+	}
+
+	#I'm the besterest!
+	option = {
+		name = gad_title_creation_decisions.0002.a
+
+		add_prestige_experience = 150
+
+		ai_chance = {
+			#Only option.
+			base = 100
+		}
+	}
+}
+
+gad_title_creation_decisions.0003 = {
+	type = character_event
+	title = gad_title_creation_decisions.0003.t
+	desc = gad_title_creation_decisions.0003.desc
+	theme = crown
+	right_portrait = {
+		character = scope:founder
+		animation = personality_honorable
+	}
+	override_background = { reference = throne_room }
+
+	immediate = {
+		gad_proclaim_e_narrow_sea_effect = yes
+	}
+
+	#I'm the besterest!
+	option = {
+		name = gad_title_creation_decisions.0003.a
+
+		add_prestige_experience = 1000
+
+		ai_chance = {
+			#Only option.
+			base = 100
+		}
+	}
+}

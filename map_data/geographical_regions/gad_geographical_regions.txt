@@ -1,0 +1,30 @@
+﻿gad_sea_of_dorne_isles = {
+	counties = {
+		c_ghaston_grey
+		c_tallor_islands
+		c_wrathrock
+		c_severisles
+	}
+}
+
+gad_storm_coast = {
+	duchies = {
+		d_tarth
+		d_estermont_isles
+	}
+	regions = {
+		gad_sea_of_dorne_isles
+	}
+}
+
+gad_narrow_sea = {
+	duchies = {
+		d_lys
+		d_tyrosh
+	}
+	regions = {
+		gad_storm_coast
+		world_stepstones
+		world_westeros_dragonstone_kingdom
+	}
+}
