@@ -16,17 +16,9 @@ d_sea_of_dorne = {
 	can_create = { 
 		trigger_if = {
 			limit = {
-				trigger_if = {
-					limit = { 
-						OR = {
-							primary_title.tier >= tier_kingdom
-							AND = {
-								primary_title.tier = tier_duchy
-								is_independent_ruler = no
-							}
-						}
-					}
-					has_title = title:d_sea_of_dorne.title_capital_county
+				is_target_in_global_variable_list = {
+					name = unavailable_unique_decisions
+					target = flag:gad_create_d_sea_of_dorne_decision
 				}
 				OR = {
 					primary_title.tier >= tier_kingdom
